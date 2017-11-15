@@ -7,7 +7,8 @@ module.exports = {
         "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
         "no-param-reassign": ["error", {
             "props": true,
-            "ignorePropertyModificationsFor": ["err"]
-          }]
-      }
+            "ignorePropertyModificationsFor": ["err", "res", "req"]
+        }],
+        "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+    }
 };
